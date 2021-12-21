@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import testImage from '../assets/images/test-image.jpg'
 
 
 export const App = () => {
@@ -12,6 +13,7 @@ export const App = () => {
             <h2> Count: {counter} </h2>
             <button onClick={() => updateCounter(+1)}>+1</button>
             <button onClick={() => updateCounter(-1)}>-1</button>
+            <img src={testImage} width="200px"/>
         </div>
     )
 }
